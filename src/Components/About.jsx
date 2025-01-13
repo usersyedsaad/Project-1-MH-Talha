@@ -2,10 +2,14 @@ import React from 'react';
 import Button from './Subcomponents/Icons/Button';
 import Icon from './Subcomponents/Icons/Icon';
 import MarqueeCarousel from './Subcomponents/Icons/Carousel';
+import LinkedinIcon from "../assets/svgs/LinkedinIcon.svg"
+import TwitterIcon from "../assets/svgs/TwitterIcon.svg"
+import InstagramIcon from "../assets/svgs/InstagramIcon.svg"
+import WhatsappIcon from "../assets/svgs/WhatsappIcon.svg"
 
 const About = () => {
   return (
-    <div className="text-white  min-h-screen flex flex-col justify-between items-center mt-[11vh]">
+    <div className="text-white  min-h-min flex flex-col justify-between items-center mt-[11vh] gap-y-40">
       {/* Main Content Section */}
       <div className="center-div flex flex-col items-center gap-5 w-full px-[10vw] pt-[5%]">
         {/* Introduction Section */}
@@ -26,10 +30,10 @@ const About = () => {
         <div className="social-links mt-5 flex items-center justify-center gap-3">
           <Button buttonTitle="Get A Quote" />
           <div className="flex gap-1">
-            <Icon imgUrl="src/assets/svgs/LinkedinIcon.svg" />
-            <Icon imgUrl="src/assets/svgs/TwitterIcon.svg" />
-            <Icon imgUrl="src/assets/svgs/InstagramIcon.svg" />
-            <Icon imgUrl="src/assets/svgs/WhatappIcon.svg" />
+            <Icon imgUrl={LinkedinIcon }/>
+            <Icon imgUrl={TwitterIcon} />
+            <Icon imgUrl={WhatsappIcon} />
+            <Icon imgUrl={InstagramIcon} />
           </div>
         </div>
       </div>

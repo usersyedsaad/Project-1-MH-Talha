@@ -21,7 +21,7 @@ const MarqueeCarousel = () => {
   ];
 
   return (
-    <div className="overflow-hidden w-full relative">
+    <div className="overflow-hidden w-full relative ">
       <div className="flex items-center gap-6 animate-marquee">
         {/* Render logos */}
         {logos.map((logo, index) => (

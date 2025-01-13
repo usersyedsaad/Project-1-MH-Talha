@@ -5,7 +5,7 @@ import Work from './Work'
 
 const Pages = () => {
   return (
-    <div className='MainContent '>
+    <div className='MainContent overflow-hidden'>
       <About/>
       <Aboutme/>
       <Work/>

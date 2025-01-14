@@ -5,13 +5,14 @@ import Work from './Work'
 import Services from './Services'
 import Reviews from './Reviews'
 import ContactMe from './ContactMe'
+
 const Pages = () => {
   return (
-    <div className='MainContent flex flex-col mt-16 mb-5'>
-      <About/>
-      <Aboutme/>
-      <Services/>
-      <Work/>
+    <div className='Pages flex flex-col'>
+      <About />
+      <Aboutme />
+      <Services />
+      <Work />
       {/* <Reviews/> */}
       {/* <ContactMe/> */}
     </div>

@@ -9,7 +9,7 @@ import WhatsappIcon from "../assets/svgs/WhatsappIcon.svg"
 
 const About = () => {
   return (
-    <div id='About' className="text-white  min-h-min flex flex-col justify-between items-center gap-y-40">
+    <div  className="text-white  min-h-min flex flex-col justify-between items-center gap-y-40">
       {/* Main Content Section */}
       <div className="center-div flex flex-col items-center gap-14 w-full px-[10vw]  mt-40  ">
         {/* Introduction Section */}

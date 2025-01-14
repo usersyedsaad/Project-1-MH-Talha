@@ -10,7 +10,7 @@ const Pages = () => {
     <div className='MainContent flex flex-col mt-16'>
       <About/>
       <Aboutme/>
-      {/* <Services/> */}
+      <Services/>
       {/* <Work/> */}
       {/* <Reviews/> */}
       {/* <ContactMe/> */}

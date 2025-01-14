@@ -29,6 +29,7 @@ body {
 /* Optional: Root-level styling */
 html {
   font-size: 16px; /* Base font size for rem units */
+  scroll-behavior: smooth;
 }
 
 /* Apply global padding for entire layout */

@@ -16,10 +16,10 @@ const NavBar = () => {
       <Brand />
       <div className={`min-w-[25%]  topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
         <a href="#About" className="active mt-1.5">About me</a>
-        <a href="#work" className="mt-1.5">Work</a>
-        <a href="#services" className="mt-1.5">Services</a>
-        <a href="#resources" className="mt-1.5">Resources</a>
-        <a href="#contact" className="mt-1.5">Contact</a>
+        <a href="#Services" className="mt-1.5">Services</a>
+        <a href="#Work" className="mt-1.5">Work</a>
+        <a href="#Resources" className="mt-1.5">Resources</a>
+        <a href="#Contact" className="mt-1.5">Contact</a>
         {/* Hamburger icon */}
         <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
           <i className=" fa fa-bars items-center justify-between mt-2"></i>

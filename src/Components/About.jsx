@@ -9,17 +9,17 @@ import WhatsappIcon from "../assets/svgs/WhatsappIcon.svg"
 
 const About = () => {
   return (
-    <div className="text-white  min-h-min flex flex-col justify-between items-center mt-[11vh] gap-y-40">
+    <div id='About' className="text-white  min-h-min flex flex-col justify-between items-center gap-y-40">
       {/* Main Content Section */}
-      <div className="center-div flex flex-col items-center gap-5 w-full px-[10vw] pt-[5%]">
+      <div className="center-div flex flex-col items-center gap-14 w-full px-[10vw]  mt-40  ">
         {/* Introduction Section */}
-        <div className="flex flex-col items-center">
-          <h1 className="text-center text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-poppins -mb-1">
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-center leading-normal font-[300] text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-poppins -mb-1">
             Hi HM Talha here 👋
           </h1>
-          <h2 className="text-center leading-relaxed text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-poppins">
-            I Help Entrepreneurs with <span className="inline-block">High-Quality</span>{' '}
-            <span className="border-2 px-5 py-0 border-[#01B7C3] rounded-full inline-block">
+          <h2 className="text-center leading-normal tracking-[-2.24] font-[300] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-poppins">
+            I Help Entrepreneurs with <span className="inline-block leading-normal">High-Quality</span>{' '}
+            <span className="border-2 px-5 py-0 border-[#01B7C3] leading-normal rounded-full inline-block">
               Designs & Development
             </span> 
             Solutions that Generate ROI
@@ -39,7 +39,7 @@ const About = () => {
       </div>
 
       {/* Carousel Section */}
-      <div className="w-full mt-auto mb-auto">
+      <div className="w-full ">
         <MarqueeCarousel />
       </div>
     </div>

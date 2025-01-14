@@ -4,8 +4,8 @@ import EmailIcon from "../../assets/svgs/EmailIcon.svg"
 
 const Brand = ({ title }) => {
   return (
-    <a href="#" className="">
-      <div className="inline-flex justify-between items-center gap-3 min-w-min">
+    <a href="#" className="flex items-start justify-start mb-auto">
+      <div className="inline-flex justify-between items-center gap-3 min-w-min ">
         <Icon imgUrl={EmailIcon}/>
         <p className="text-[#A4A7AC] text-xs sm:text-base md:text-base lg:text-lg">HMTalha@gmail.com</p>
       </div>

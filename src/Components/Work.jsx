@@ -1,17 +1,12 @@
 import React from 'react'
-import Card from './Subcomponents/Icons/Card'
-
 const Work = () => {
   return (
-    <div className='text-white  h-auto w-full flex flex-col gap-20'>
-      <h3 className='tracking-[-2.24px] font-light leading-normal text-5xl'>I can help you with ...</h3>
-      <div className='min-h-min grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-y-[9.6%] gap-x-[2.5%]'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+    <div className='bg-red-300 text-white w-full '>
+      <div className='flex flex-col justify-between'>
+        <h4>My Work</h4>
+        <p>A piece from my selection of favorites</p>
       </div>
+      <div></div>
     </div>
   )
 }

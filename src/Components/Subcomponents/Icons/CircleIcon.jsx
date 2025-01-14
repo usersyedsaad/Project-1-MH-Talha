@@ -1,11 +1,8 @@
-import React from 'react';
-
 const CircleIcon = () => {
   return (
     <svg
+      className="md:w-[228px] md:h-[228px] w-[50%] h-[50%]"
       xmlns="http://www.w3.org/2000/svg"
-      width="228"
-      height="228"
       viewBox="0 0 228 228"
       fill="none"
     >

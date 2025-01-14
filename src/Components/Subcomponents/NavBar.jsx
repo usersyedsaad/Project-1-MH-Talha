@@ -12,14 +12,14 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between w-full h-auto m-3 ">
+    <div className="NavBar w-[93.75%]  flex items-center justify-between h-auto m-3 ">
       <Brand />
-      <div className={`min-w-[25%] topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
-        <a href="#About" className="active">About me</a>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
+      <div className={`min-w-[25%]  topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
+        <a href="#About" className="active mt-1.5">About me</a>
+        <a href="#work" className="mt-1.5">Work</a>
+        <a href="#services" className="mt-1.5">Services</a>
+        <a href="#resources" className="mt-1.5">Resources</a>
+        <a href="#contact" className="mt-1.5">Contact</a>
         {/* Hamburger icon */}
         <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
           <i className=" fa fa-bars items-center justify-between mt-2"></i>

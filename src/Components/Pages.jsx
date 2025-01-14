@@ -5,6 +5,7 @@ import Work from './Work'
 import Services from './Services'
 import Reviews from './Reviews'
 import ContactMe from './ContactMe'
+import Footer from './Footer'
 
 const Pages = () => {
   return (
@@ -13,8 +14,9 @@ const Pages = () => {
       <Aboutme />
       <Services />
       <Work />
-      {/* <Reviews/> */}
-      {/* <ContactMe/> */}
+      <Reviews/>
+      <ContactMe/>
+      <Footer/>
     </div>
   )
 }

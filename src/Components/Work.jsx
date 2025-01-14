@@ -7,7 +7,7 @@ import WorkImg4 from '../assets/imgs/WorkImg4.png'
 
 const Work = () => {
   return (
-    <div id='Work' className='text-white w-full ml-auto mr-auto flex flex-col gap-8 mt-22 min-h-screen'>
+    <div id='Work' className='text-white w-full ml-auto mr-auto flex flex-col gap-8 mt-22 min-h-screen px-5'>
       <div className='flex justify-between items-center'>
         <h4 className='text-xl md:text-5xl lg:text-[56px] font-[300] leading-normal tracking-[-2.24px]'>
           My Work
@@ -16,7 +16,7 @@ const Work = () => {
           A piece from my selection of favorites
         </p>
       </div>
-      <div className='work-cards w-full grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10'>
+      <div className='work-cards w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10'>
         <WorkCard imgURL={WorkImg1} />
         <WorkCard imgURL={WorkImg2} />
         <WorkCard imgURL={WorkImg3} />

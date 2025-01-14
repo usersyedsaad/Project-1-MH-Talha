@@ -2,15 +2,15 @@ import DannyGiljes from '../assets/imgs/DannyGiljes.png'
 
 const Reviews = () => {
   return (
-    <div className='bg-red-300  flex-col items-center pt-[180px]'>
+    <div className=' flex-col items-center pt-[180px]'>
       <div className='want-to-see-more'>
         <h4 className='text-white text-center text-[56px] font-[300] leading-normal tracking-[.2.24px]'>Want to see more?</h4>
         <p className="text[#A4A7AC] text-center text-[32px] font-[300] leading-normal tracking-[-1.28px]
         ">Reach out to me <span className="text-[#01B7C3] text-[32px]  font-[300] leading-normal tracking[-1.28px]">HMTalha@gmail.com </span></p>
       </div>
       
-      <div className="pt-[180px] bg-slate-300 ml-auto mr-auto flex w-[89%] items-center justify-between">
-        <div className="bg-green-200 self-end w-[49%]  gap-[192px] flex flex-col items-start justify-between">
+      <div className="pt-[180px]  ml-auto mr-auto flex w-[89%] items-center justify-between">
+        <div className=" self-end w-[49%]  gap-[192px] flex flex-col items-start justify-between">
           <div>
             <h5 className=" text-white text-5xl font-[300] leading-normal tracking-[-2.24] ">Read what our clients have to say?</h5>
           </div>

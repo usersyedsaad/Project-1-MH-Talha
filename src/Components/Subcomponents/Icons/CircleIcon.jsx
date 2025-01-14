@@ -1,4 +1,4 @@
-const CircleIcon = () => {
+const CircleIcon = (props) => {
   return (
     <svg
       className="md:w-[228px] md:h-[228px] w-[50%] h-[50%]"
@@ -15,7 +15,7 @@ const CircleIcon = () => {
         strokeWidth="0.857143"
       />
       <image
-        href="src/assets/imgs/sassac1.png"
+        href={props.imgURL}
         x="52"
         y="34"
         height="160.143"

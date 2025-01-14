@@ -1,14 +1,14 @@
 import React from 'react'
 import Button from './Subcomponents/Icons/Button'
 import CircleIcon from './Subcomponents/Icons/CircleIcon'
-
+import Sassac from '../assets/imgs/Sassac1.png'
 const Aboutme = () => {
   return (
     <div className='h-auto w-full overflow-hidden text-white  flex flex-col items-center justify-between gap-44'>
       <h2 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center w-[73%] mt-40 h-auto'>I Collaborate with brands and agencies to create impactful results.</h2>
       <div className=' w-[85%] flex flex-col md:flex-row justify-start items-start gap-14 ml-[3%]'>
         
-        <div ><CircleIcon/></div>
+        <div ><CircleIcon imgURL={Sassac}/></div>
         <div className='aboutme gap-3 '>
           <h3 className='text-[#01B7C3] text-lg md:text-xl lg:text-2xl xl:text-3xl font-light tracking-[-1.28px]'>About Me</h3>
           <p className=' text-lg md:text-xl lg:text:2xl xl:text-3xl leading-normal font-light tracking-[-1.28px]'>I'm helping startups and business owners to make a visual statement through spotless Web Design and Development so they can increase brand awareness and sell more.</p>

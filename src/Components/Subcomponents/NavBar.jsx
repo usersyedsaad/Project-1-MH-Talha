@@ -26,12 +26,13 @@ const NavBar = () => {
         </a>
         {/* Button inside the menu on smaller screens */}
         <div className={`sm:block ${isResponsive ? 'block' : 'hidden'} sm:hidden`}>
-          <Button buttonTitle="Get A Quote" />
+          <Button buttonTitle="Get A Quote"  />
         </div>
       </div>
       {/* Button outside on larger screens */}
       <div className="hidden sm:block">
-        <Button buttonTitle="Get A Quote" />
+      <Button buttonTitle="Get A Quote"/>
+
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const Aboutme = () => {
           <Button buttonTitle="Book A Discovery Call " style={{marginTop: "12px"}}/>
         </div>
       </div>
-      <div className=' flex  mr-[1%]  w-full justify-center '>
+      <div className=' flex  mr-[1%]  w-full justify-center'>
         <div className='w-[85%] ml-[3%] gap-x-14'>
         <h3 className='text-2xl md:text-3xl lg:text-5xl xl:text-5xl leading-normal md:w-[65.4%] font-light md:tracking-[-2.24px] h-auto mr- md:ml-[210px] lg:ml-[240px] '>I take a critical approach, applying the results of my explorations to create collisions of insight, inspiration and experimentation, for you</h3>
         </div>

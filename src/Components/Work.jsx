@@ -1,12 +1,22 @@
 import React from 'react'
+import WorkCard from './Subcomponents/Icons/WorkCard.jsx'
+import WorkImg1 from '../assets/imgs/WorkImg1.png'
+import WorkImg2 from '../assets/imgs/WorkImg2.png'
+import WorkImg3 from '../assets/imgs/WorkImg3.png'
+import WorkImg4 from '../assets/imgs/WorkImg4.png'
 const Work = () => {
   return (
-    <div className='bg-red-300 text-white w-full '>
-      <div className='flex flex-col justify-between'>
-        <h4>My Work</h4>
-        <p>A piece from my selection of favorites</p>
+    <div id='Work' className=' text-white w-fit ml-auto mr-auto flex flex-col gap-8 '>
+      <div className='flex justify-between items-center'>
+        <h4 className='text-xl md:text-5xl lg:text-[56px] font-[300] leading-normal tracking-[-2.24px]'>My Work</h4>
+        <p className='text-sm md:text:xl lg:text-2xl font-[300] leading-normal tracking-[-0.96px]'>A piece from my selection of favorites</p>
       </div>
-      <div></div>
+      <div className='work-cards w-full  grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10'>
+        <WorkCard imgURL={WorkImg1}/>
+        <WorkCard imgURL={WorkImg2}/>
+        <WorkCard imgURL={WorkImg3}/>
+        <WorkCard imgURL={WorkImg4}/>
+      </div>
     </div>
   )
 }

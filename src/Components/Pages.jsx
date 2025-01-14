@@ -7,11 +7,11 @@ import Reviews from './Reviews'
 import ContactMe from './ContactMe'
 const Pages = () => {
   return (
-    <div className='MainContent flex flex-col mt-16'>
+    <div className='MainContent flex flex-col mt-16 mb-5'>
       <About/>
       <Aboutme/>
       <Services/>
-      {/* <Work/> */}
+      <Work/>
       {/* <Reviews/> */}
       {/* <ContactMe/> */}
     </div>

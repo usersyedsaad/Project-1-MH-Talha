@@ -1,7 +1,7 @@
 const CircleIcon = (props) => {
   return (
     <svg
-      className="md:w-[228px] md:h-[228px] w-[50%] h-[50%]"
+      className="md:w-[150px] md:h-[150px] lg:w-[185px] lg:h-[185px] w-[50%] h-[50%]"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 228 228"
       fill="none"

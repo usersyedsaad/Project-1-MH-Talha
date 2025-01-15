@@ -3,6 +3,16 @@ import React from 'react';
 import ArrowButton from './Subcomponents/Icons/ArrowButton';
 
 const Footer = () => {
+
+  const handleScrollToHome = () => {
+    const homeSection = document.getElementById('Home');
+    if (homeSection) {
+      homeSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scroll
+        block: 'start', // Align to top of the viewport
+      });
+    }
+  };
   return (
     <footer className="text-white w-full py-6 px-4  flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       {/* Left Section */}
@@ -11,11 +21,12 @@ const Footer = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex justify-center md:justify-end items-center gap-4">
+      <div className="flex justify-center md:justify-end items-center gap-4" onClick={handleScrollToHome}  >
         <p className="text-sm md:text-base lg:text-lg cursor-pointer hover:text-gray-400 transition duration-300">
           Back to top
         </p>
         <ArrowButton
+
           size="60px"
           arrowScale={0.5} // Arrow is 50% of the button size
           style={{

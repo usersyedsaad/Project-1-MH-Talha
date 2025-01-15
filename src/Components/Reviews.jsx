@@ -2,7 +2,7 @@ import DannyGiljes from '../assets/imgs/DannyGiljes.png'
 
 const Reviews = () => {
   return (
-    <div className="flex flex-col items-center pt-10 ">
+    <div id='Resources' className="flex flex-col items-center pt-10 ">
       {/* Header Section */}
       <div className="text-center px-4">
         <h4 className="text-white text-4xl sm:text-5xl md:text-[56px] font-light leading-tight tracking-tight">

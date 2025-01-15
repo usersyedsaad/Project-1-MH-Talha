@@ -3,7 +3,7 @@ import Button from './Subcomponents/Icons/Button'
 
 const ContactMe = () => {
   return (
-    <div className='text-white  pt-[256px] flex flex-col items-center justify-between gap-[64px]'>
+    <div id='Contact' className='text-white  pt-[256px] flex flex-col items-center justify-between gap-[64px]'>
       
       <div className='lets-make-etc flex flex-col self-end gap-[24px] w-[76%]' >
         <h6 className='text-white font-[300] leading-normal tracking-[-2.24px] text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-left '>Let’s Make Something <span className='text-[#01B7C3]'>Great Together</span>. Start a <span className='text-[#01B7C3]'>conversation</span> 👋</h6>

@@ -1,24 +1,37 @@
-import React from 'react'
-import Button from './Subcomponents/Icons/Button'
-import ArrowButton from './Subcomponents/Icons/ArrowButton'
+import React from 'react';
+
+import ArrowButton from './Subcomponents/Icons/ArrowButton';
+
 const Footer = () => {
   return (
-    <footer className='text-white  w-full h-auto flex justify-between items-center'>
-      <div className='text-white text-xs lg:text-base xl:text-lg font-[300] leading-normal '>© 2022 MH TALHA. All right reserved.</div>
-      <div className='flex justify-between items-center w-[217px]'>
-        <p className='text-sm md:text-base lg:text-lg'>Back to top</p>
+    <footer className="text-white w-full py-6 px-4  flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      {/* Left Section */}
+      <div className="text-center md:text-left text-xs md:text-sm lg:text-base xl:text-lg font-light">
+        © 2022 MH TALHA. All rights reserved.
+      </div>
+
+      {/* Right Section */}
+      <div className="flex justify-center md:justify-end items-center gap-4">
+        <p className="text-sm md:text-base lg:text-lg cursor-pointer hover:text-gray-400 transition duration-300">
+          Back to top
+        </p>
         <ArrowButton
-        size="60px"
-        arrowScale={0.5} // Arrow is 50% of the button size
-        style={{
-          backgroundColor: 'transparent',
-          border: '1px solid #FFF',
-          borderRadius: '50%', // Optional radius
-        }}
-      />
+          size="60px"
+          arrowScale={0.5} // Arrow is 50% of the button size
+          style={{
+            backgroundColor: 'transparent',
+            border: '1px solid #FFF',
+            borderRadius: '50%',
+            transition: 'transform 0.3s ease, border-color 0.3s ease',
+          }}
+          hoverStyle={{
+            transform: 'scale(1.1)',
+            borderColor: '#01B7C3',
+          }}
+        />
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

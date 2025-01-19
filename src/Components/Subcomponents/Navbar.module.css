@@ -1,0 +1,99 @@
+@import "../vars.css";
+
+
+.navBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 61px; /* Define the height explicitly */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--colorbg);
+  z-index: 1000; /* Ensure navbar stays above other content */
+}
+
+
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--colortext);
+  text-align: center;
+  
+}
+
+/* Default menu styles */
+.menu {
+  display: flex;
+  top: 61px;
+}
+
+
+
+/* Menu items hidden by default on smaller screens */
+.menuItems {
+  display: none;
+  gap: 47px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 25px;
+  align-items: center;
+}
+
+.menuItems a{
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--colortext);
+}
+
+/* Menu button styles */
+.menuBtn {
+  cursor: pointer;
+}
+
+/* Large screens: Hide the menu button and display menu items horizontally */
+@media screen and (min-width: 830px) {
+  .menuBtn {
+    display: none; /* Hide the menu button */
+  }
+
+  .menuItems {
+    display: flex; /* Show menu items */
+    gap: 47px;
+    flex-direction: row; /* Ensure horizontal layout */
+  }
+}
+
+/* Small screens: Show menu button and toggle menu items */
+@media screen and (max-width: 830px) {
+  .menu {
+    
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex; /* Show menu items when menuOpen is true */
+  }
+}

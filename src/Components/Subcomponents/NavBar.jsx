@@ -1,41 +1,45 @@
-import { useState } from "react";  // Importing useState for handling the responsive toggle
-import Button from "./Icons/Button";
-import Brand from "./Brand";
+import styles from "./NavBar.module.css";
+import { getImageUrl } from "../../utils";
+import { useState } from "react";
 
 const NavBar = () => {
-  // State to handle responsive toggle
-  const [isResponsive, setIsResponsive] = useState(false);
-
-  // Function to toggle responsive class
-  const toggleNav = () => {
-    setIsResponsive(!isResponsive);
-  };
-
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="NavBar w-[93.75%]  flex items-center justify-between h-auto m-3 ">
-      <Brand />
-      <div className={`min-w-[25%]  topnav ${isResponsive ? 'responsive' : ''}`} id="myTopnav">
-        <a href="#About" className="active mt-1.5">About me</a>
-        <a href="#Services" className="mt-1.5">Services</a>
-        <a href="#Work" className="mt-1.5">Work</a>
-        <a href="#Resources" className="mt-1.5">Resources</a>
-        <a href="#Contact" className="mt-1.5">Contact</a>
-        {/* Hamburger icon */}
-        <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
-          <i className=" fa fa-bars items-center justify-between mt-2"></i>
-        </a>
-        {/* Button inside the menu on smaller screens */}
-        <div className={`sm:block ${isResponsive ? 'block' : 'hidden'} sm:hidden`}>
-          <Button buttonTitle="Get A Quote"  />
-        </div>
+    <header className={styles.header}>
+    <nav className={styles.navBar}>
+      <a href="/" className={styles.title}>Portfolio</a>
+      <div className={styles.menu}>
+        <img
+          className={styles.menuBtn}
+          src={
+            menuOpen
+              ? getImageUrl("nav/closeIcon.png")
+              : getImageUrl("nav/menuIcon.png")
+          }
+          alt="menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+        <ul
+          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          onClick={() => setMenuOpen(!false)}
+        >
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      {/* Button outside on larger screens */}
-      <div className="hidden sm:block">
-      <Button buttonTitle="Get A Quote"/>
+    </nav>
+    </header>
+  )
+}
 
-      </div>
-    </div>
-  );
-};
-
-export default NavBar;
+export default NavBar
